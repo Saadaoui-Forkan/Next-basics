@@ -39,7 +39,8 @@ http://localhost:3000/posts/create
 http://localhost:3000/posts/${variable}
 ```
 1. creer un fichier [param].js
-2. ```
+2. 
+```
   import { useRouter } from "next/router"
 
 function PostId() {
