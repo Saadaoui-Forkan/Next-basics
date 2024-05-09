@@ -57,3 +57,51 @@ function PostId() {
 }
 
 ```
+
+### Router
+soit l'Url suivante: `http://localhost:3000/post/1?comment=2`<br/>
+`?comment=2` : C'est la partie de l'URL qui spécifie les paramètres de requête. Les paramètres de requête sont utilisés pour transmettre des données supplémentaires avec une requête HTTP GET. Dans cet exemple, comment=2 indique qu'il y a un paramètre nommé comment avec la valeur 2. Cela pourrait être utilisé pour filtrer ou afficher des commentaires spécifiques liés à l'article ou au post identifié par 1.
+
+```
+    const data = router.query
+    console.log(data) // {comment: '44', param: '8'}
+    <h4>
+      Current path is: {router.pathname}
+      {/* Current path is: /posts/[param] */}
+    </h4>
+    <h4>
+      Full path is: {router.asPath}
+      {/* Full path is: /posts/8?comment=44 */}
+    </h4>
+```
+
+1. Definir un chemin/route en utulisant router.push()
+```
+<button
+  onClick={() => {
+    router.push({ pathname: "/posts/[param]", query: { param: 1 } });
+  }}
+>
+  Read more
+</button>
+```
+2. Revenir au chemin/router precedante
+```
+ <button
+  onClick={() => {
+    router.back();
+  }}
+>
+  Back
+</button>
+```
+3. router.replace()
+```
+<button
+  onClick={() => {
+    router.replace('/');
+  }}
+>
+  Home
+</button>
+```
