@@ -105,3 +105,21 @@ soit l'Url suivante: `http://localhost:3000/post/1?comment=2`<br/>
   Home
 </button>
 ```
+
+### Optimisation pour les moteurs de recherche SEO
+```
+import Head from 'next/head'
+ 
+function IndexPage() {
+  return (
+    <div>
+      <Head>
+        <title>My page title</title>
+      </Head>
+      <p>Hello world!</p>
+    </div>
+  )
+}
+ 
+export default IndexPage
+```
