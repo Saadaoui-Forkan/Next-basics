@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 function PostId() {
   const router = useRouter();
   const data = router.query;
-  console.log(data); // {comment: '44', param: '8'}
+  // console.log(data); // {comment: '44', param: '8'}
   const { param } = router.query;
   return (
     <>

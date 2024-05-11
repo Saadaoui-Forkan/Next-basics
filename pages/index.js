@@ -10,7 +10,7 @@ export default function Home() {
       </Head>
       <h1>Hello Next</h1>
       <Link href={'/posts'}>
-        <button>Login</button>
+        <button>Posts</button>
       </Link><br/><br/>
       <Image
         src={'/images/Sample.png'}

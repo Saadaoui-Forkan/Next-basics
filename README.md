@@ -123,3 +123,5 @@ function IndexPage() {
  
 export default IndexPage
 ```
+
+__getStaticProps:__ une fonction utilisée pour la génération statique , une technique de pré-rendu qui récupère les données et génère le code HTML d'une page au moment de la construction . Cela signifie que le contenu de la page est déjà disponible lorsque l'utilisateur le demande, ce qui entraîne des temps de chargement initiaux plus rapides et un référencement amélioré.
